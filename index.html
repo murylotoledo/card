@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" charset="utf-8">
+<head>
+    <title>Murylo Henrique Dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- CSS LANDING PAGE -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- FONTS LANDING PAGE -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500" rel="stylesheet">
+</head>
+<body>
+<div id="holographic" onmousemove="handleMouseMove(event)"></div>
+<script>
+      const holographicElement = document.getElementById("holographic");
+
+      function updateHolographicBackground(value) {
+        const percentage = value * 100;
+        holographicElement.style.backgroundPosition =
+          percentage + "%";
+      }
+
+      function handleMouseMove(event) {
+        const x = event.clientX;
+        const width = document.documentElement.clientWidth;
+        const value = x / width;
+        updateHolographicBackground(value);
+      }
+
+      function handleDeviceOrientation(event) {
+        const z = Math.abs(event.alpha); // rotation degrees from 0 to 360
+        const value = z / 360;
+        updateHolographicBackground(value);
+      }
+
+      window.addEventListener("deviceorientation", handleDeviceOrientation, true);
+    </script>
+</body>
+</html>
