@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" width="120px" height="120px">
+		<defs>
+			<pattern id="polka-dot" x="23.5" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+				<rect width="1" height="60" fill="#393939" r="4" />
+			</pattern>
+            <pattern id="polka-do" x="0" y="3.5" width="60" height="60" patternUnits="userSpaceOnUse">
+				<rect width="60" height="1" fill="#393939" r="4" />
+			</pattern>
+		</defs> 
+		<rect x="0" y="0" width="120" height="120" fill="url(#polka-dots)" />
+		<rect x="0" y="0" width="120" height="120" fill="url(#polka-dot)" />
+		<rect x="0" y="0" width="120" height="120" fill="url(#polka-do)" />
+</svg>
