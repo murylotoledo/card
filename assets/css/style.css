@@ -50,7 +50,7 @@ table {
     box-sizing: border-box;
 }
 body {
-    background: #303030;
+    background: #303030 url('../svg/bgg.svg') repeat center center;
     font-family: Poppins,sans-serif;
     font-style: normal;
     -webkit-text-size-adjust: 100%;
